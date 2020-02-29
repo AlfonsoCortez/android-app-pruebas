@@ -1,0 +1,213 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="@color/colorPrimaryDark"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculadora"
+
+            android:textColor="@color/colorBlanco"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/review"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@color/colorGris"
+        android:layout_below="@+id/menu"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:id="@+id/twPantalla"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="30dp"
+            android:layout_centerVertical="true"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/review"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        >
+
+        /*------------------------------------------------------*/
+
+        <Button
+            android:id="@+id/btnUno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            />
+
+        <Button
+            android:id="@+id/btnDos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:layout_toRightOf="@+id/btnUno"/>
+
+        <Button
+            android:id="@+id/btnTres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:layout_toRightOf="@+id/btnDos"
+            />
+
+        <Button
+            android:id="@+id/btnSumar"
+            android:background="@color/colorVerde"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+
+            android:layout_toRightOf="@+id/btnTres"/>
+
+        /*------------------------------------------------------*/
+       <Button
+            android:id="@+id/btnCuadro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:layout_below="@+id/btnUno"
+            />
+
+        <Button
+            android:id="@+id/btnCinco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:layout_below="@+id/btnUno"
+            android:layout_toRightOf="@+id/btnCuadro"/>
+
+        <Button
+            android:id="@+id/btnSeis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6"
+            android:layout_below="@+id/btnUno"
+            android:layout_toRightOf="@+id/btnCinco"/>
+
+        <Button
+            android:id="@+id/btnRestar"
+            android:background="@color/colorVerde"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:layout_below="@+id/btnUno"
+            android:layout_toRightOf="@+id/btnSeis"/>
+
+        /*------------------------------------------------------*/
+
+        <Button
+            android:id="@+id/btnSiete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7"
+            android:layout_below="@+id/btnCinco"
+            />
+
+        <Button
+            android:id="@+id/btnOcho"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8"
+            android:layout_below="@+id/btnCinco"
+            android:layout_toRightOf="@+id/btnSiete"
+            />
+
+        <Button
+            android:id="@+id/btnNueve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9"
+            android:layout_below="@+id/btnCinco"
+            android:layout_toRightOf="@+id/btnOcho"
+           />
+
+        <Button
+            android:id="@+id/btnDividir"
+            android:background="@color/colorVerde"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:layout_below="@+id/btnCinco"
+            android:layout_toRightOf="@+id/btnSeis"/>
+        /*------------------------------------------------------*/
+        <Button
+            android:id="@+id/btnCE"
+            android:background="@color/colorVerde"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CE"
+            android:layout_below="@+id/btnOcho"/>
+
+        <Button
+            android:id="@+id/btnCero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_below="@+id/btnOcho"
+            android:layout_toRightOf="@+id/btnCE"
+            />
+        <Button
+            android:id="@+id/btnMultiplicar"
+            android:background="@color/colorVerde"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:layout_below="@+id/btnOcho"
+            android:layout_toRightOf="@+id/btnCero"/>
+
+        <Button
+            android:id="@+id/btnIgual"
+            android:background="@color/colorVerde"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="="
+            android:layout_below="@+id/btnOcho"
+            android:layout_toRightOf="@+id/btnMultiplicar"/>
+
+        <Button
+            android:id="@+id/btnPunto"
+            android:background="@color/colorVerde"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="."
+            android:layout_below="@+id/btnCE"
+            android:layout_toRightOf="@+id/btnCE"/>
+
+        <Button
+            android:id="@+id/btnBorrarLetra"
+            android:background="@color/colorVerde"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Borrar letra"
+            android:layout_below="@+id/btnCE"
+            android:layout_toRightOf="@+id/btnPunto"/>
+        /*------------------------------------------------------*/
+        /*------------------------------------------------------*/
+
+
+
+
+
+    </RelativeLayout>
+</RelativeLayout>
