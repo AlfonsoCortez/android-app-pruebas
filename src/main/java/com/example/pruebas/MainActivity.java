@@ -2,6 +2,7 @@ package com.example.pruebas;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -18,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     TextView mostrarTexto;
     EditText casillaTexto;
     Button boton;
-    Button botonRediccionar;
+
     Button btnInfo;
 
 
@@ -30,11 +31,16 @@ public class MainActivity extends AppCompatActivity {
         mostrarTexto = (TextView)findViewById(R.id.texto);
         boton = (Button)findViewById(R.id.boton);
         casillaTexto = (EditText)findViewById(R.id.entrada);
-        botonRediccionar = (Button)findViewById(R.id.botonRedireccionar);
+
         btnInfo = (Button)findViewById(R.id.btnInfo);
 
         boton1 = (Button)findViewById(R.id.boton1);
         boton2 = (Button)findViewById(R.id.boton2);
+
+
+
+
+
 
         btnInfo.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -43,6 +49,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
         boton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -65,15 +73,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String texto = casillaTexto.getText().toString();
                 mostrarTexto.setText(texto);
-            }
-        });
-
-        botonRediccionar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(MainActivity.this,pantallaimc.class);
-                startActivity(intent);
             }
         });
 

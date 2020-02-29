@@ -16,6 +16,7 @@ public class pantallaimc extends AppCompatActivity {
     TextView twVisualizar;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,38 +39,38 @@ public class pantallaimc extends AppCompatActivity {
                 double resultadoImc = peso/(altura * altura);
 
                 if(resultadoImc <= 18.5){
-                    twVisualizar.setText("Tienes un peso insuficiente" + " " +resultadoImc);
+                    twVisualizar.setText("Tienes un peso insuficiente" );
 
                 }else if(resultadoImc > 18.5 && resultadoImc < 24.9){
 
-                    twVisualizar.setText("Tienes un peso normal"+ " " +resultadoImc);
+                    twVisualizar.setText("Tienes un peso normal");
 
                 }else if(resultadoImc > 25 && resultadoImc < 26.9){
 
-                    twVisualizar.setText("Tienes un Sobrepeso grado I"+ " " +resultadoImc);
+                    twVisualizar.setText("Tienes un Sobrepeso grado I");
 
                 }else if(resultadoImc > 27 && resultadoImc < 29.9){
 
-                    twVisualizar.setText("Tienes un Sobrepeso grado II (preobesidad)"+ " " +resultadoImc);
+                    twVisualizar.setText("Tienes un Sobrepeso grado II (preobesidad)");
 
                 }else if(resultadoImc > 30 && resultadoImc < 34.9){
 
-                    twVisualizar.setText("Tienes un Obesidad de tipo I"+ " " +resultadoImc);
+                    twVisualizar.setText("Tienes un Obesidad de tipo I");
 
                 }else if(resultadoImc > 35 && resultadoImc < 39.9){
 
-                    twVisualizar.setText("Tienes un Obesidad de tipo II"+ " " +resultadoImc);
+                    twVisualizar.setText("Tienes un Obesidad de tipo II");
 
                 }else if(resultadoImc > 40 && resultadoImc < 49.9){
 
-                    twVisualizar.setText("Tienes un Obesidad de tipo III (mórbida)"+ " " +resultadoImc);
+                    twVisualizar.setText("Tienes un Obesidad de tipo III (mórbida)");
 
                 }else if(resultadoImc > 50 ){
 
-                    twVisualizar.setText("Tienes un Obesidad de tipo IV (extrema)"+ " " +resultadoImc);
+                    twVisualizar.setText("Tienes un Obesidad de tipo IV (extrema)");
 
                 }else{
-                    twVisualizar.setText("Dato invalido." + " " +resultadoImc);
+                    twVisualizar.setText("Dato invalido.");
 
                 }
 

@@ -54,27 +54,9 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"/>
 
-    <Button
-        android:id="@+id/botonRedireccionar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ir a la calculadora de IMC "
-        android:padding="10dp"
-        android:layout_below="@+id/boton"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        />
 
-    <Button
-        android:id="@+id/btnInfo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ver informacion"
-        android:padding="10dp"
-        android:layout_below="@+id/botonRedireccionar"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        />
+
+
 
 
     <RelativeLayout
@@ -85,23 +67,39 @@
         android:background="@color/colorPrimaryDark"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
+
         >
 
         <Button
+            android:background="@color/colorBlanco"
             android:id="@+id/boton1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="10dp"
-            android:text="Ir a la calculadora de IMC " />
+            android:text="Ir a la calculadora de IMC "
+            android:layout_centerHorizontal="true"/>
 
         <Button
+            android:background="@color/colorBlanco"
             android:id="@+id/boton2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Calculadora"
             android:padding="10dp"
             android:layout_centerHorizontal="true"
-            android:layout_toRightOf="@+id/boton1"
+            android:layout_below="@+id/boton1"
+            android:layout_marginTop="10dp"
+            />
+        <Button
+            android:background="@color/colorBlanco"
+            android:id="@+id/btnInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ver informacion de la app"
+            android:padding="10dp"
+            android:layout_below="@+id/boton2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
             />
     </RelativeLayout>
 
