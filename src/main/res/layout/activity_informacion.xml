@@ -50,7 +50,9 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/imagenGithub"
             android:layout_centerHorizontal="true"
-            android:text="Alfonso Jose Chavarro Cortes"
+            android:text="Desarrollado por:
+
+            Alfonso Jose Chavarro Cortes"
             android:textSize="17dp" />
 
         <Button

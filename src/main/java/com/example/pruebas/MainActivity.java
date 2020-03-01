@@ -16,10 +16,7 @@ public class MainActivity extends AppCompatActivity {
     Button boton1;
     Button boton2;
 
-    TextView mostrarTexto;
-    EditText casillaTexto;
-    Button boton;
-
+    Button btnHola;
     Button btnInfo;
 
 
@@ -28,19 +25,23 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mostrarTexto = (TextView)findViewById(R.id.texto);
-        boton = (Button)findViewById(R.id.boton);
-        casillaTexto = (EditText)findViewById(R.id.entrada);
+
 
         btnInfo = (Button)findViewById(R.id.btnInfo);
 
         boton1 = (Button)findViewById(R.id.boton1);
         boton2 = (Button)findViewById(R.id.boton2);
+        btnHola = (Button)findViewById(R.id.btnHola);
 
 
 
-
-
+        btnHola.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,holamundo.class);
+                startActivity(intent);
+            }
+        });
 
         btnInfo.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -68,13 +69,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        boton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String texto = casillaTexto.getText().toString();
-                mostrarTexto.setText(texto);
-            }
-        });
 
 
 
